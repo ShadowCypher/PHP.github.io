@@ -1,5 +1,26 @@
 <html>
+<style>
+body{
+ font: 20px Verdana;
+}
 
+h1{
+ font: 20px Verdana;
+ color: red;
+}
+
+.Input{
+ font: 20px Verdana;
+ border: 1px solid orange;
+ width: 300px;
+}
+
+.Submit{
+ font: 20px Verdana;
+ border: 1px solid orange;
+ width: 300px;
+}
+</style>
  <head>
   <link rel="stylesheet" href="style.css" type="text/css">
  </head>
@@ -39,7 +60,7 @@
 
   #Delete everything, write down new and old comments
   $write = fopen("comments.txt", "w+");
-  $string = "<b>".$Name."</b><br>".$Comment."<br>\n".$old_comments;
+  $string = "<b>".$Name."</b><br/>".$Comment."<br/>\n".$old_comments;
   fwrite($write, $string);
   fclose($write);
   fclose($old);
@@ -52,25 +73,3 @@
 
 ?>
 
-<style>
-body{
- font: 20px Verdana;
-}
-
-h1{
- font: 20px Verdana;
- color: red;
-}
-
-.Input{
- font: 20px Verdana;
- border: 1px solid orange;
- width: 300px;
-}
-
-.Submit{
- font: 20px Verdana;
- border: 1px solid orange;
- width: 300px;
-}
-</style>
